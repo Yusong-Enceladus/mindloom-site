@@ -1,0 +1,342 @@
+<!doctype html>
+<html lang="zh-Hans">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Mindloom 隐私政策 · Privacy Policy</title>
+<meta name="description" content="Mindloom 在 Mac、iPhone 和 Apple Watch 上把什么保存在哪里，内容通过哪些路径离开设备。 What Mindloom keeps where, and every path by which content can leave a device.">
+<link rel="stylesheet" href="../assets/site.css">
+</head>
+<body>
+<header class="top">
+  <a class="brand" href="../">Mindloom</a>
+  <nav><a href="./">隐私 · Privacy</a><a href="../support/">支持 · Support</a></nav>
+</header>
+<main>
+<p class="langs"><a href="#zh">简体中文</a><a href="#en">English</a></p>
+
+<section id="zh" lang="zh-Hans">
+<h1>Mindloom 隐私政策</h1>
+<p class="meta">生效日期：2026 年 10 月 18 日　开发者：Ethan Huang　联系邮箱：<a href="mailto:mindloom@agent.qq.com">mindloom@agent.qq.com</a></p>
+
+<div class="summary">
+<ul>
+<li>录音、转写文字、你添加的资料、声纹和个人词典保存在你自己的设备上。</li>
+<li>Mindloom 没有账户，没有广告，没有第三方分析，没有跟踪，也没有崩溃或使用情况上报。</li>
+<li>开发者不运行接收你的录音、转写文字或资料的服务器，因此开发者不接收这些内容。</li>
+<li>内容离开设备的路径全部列在第 4 节。除下载模型和 Apple 的系统服务外，每一条都默认关闭，由你开启，可以随时关闭。</li>
+</ul>
+</div>
+
+<h2>1. 适用范围</h2>
+<p>本政策适用于 Mindloom 在 Mac、iPhone 和 Apple Watch 上的 App，包括 iPhone 的分享扩展、实时活动、Apple Watch 的表盘小组件，以及 Mac 的共享扩展和服务菜单项。</p>
+
+<h2>2. 开发者接收什么</h2>
+<p>开发者不接收你的录音、转写文字或资料。第 4 节列出的是内容可能离开你的设备的全部路径；其中 (a) 和 (b)（下载模型和 Apple 的系统服务）之外的路径都默认关闭，由你开启，可以随时关闭。</p>
+
+<h2>3. 保存在你的设备上的内容</h2>
+<p>下列内容保存在你的 Mac 或 iPhone 上，由你管理：</p>
+<ul>
+<li>录音（口述、会议、系统音频、导入的音视频、Apple Watch 和 iPhone 的录音）及其逐字稿。iPhone 和 Apple Watch 上没有会议、系统音频和导入。</li>
+<li>你添加的文字、链接、截图和文件，以及它们的来源（来源 App 的名称、时间、网页地址）。</li>
+<li>声纹（声音样本）和个人词典。</li>
+<li>按人、按事整理出的内容，以及搜索用的索引。</li>
+</ul>
+<p>声纹保存在主设备上（有 Mac 时是 Mac，只用 iPhone 时是 iPhone），不在第 4 节的任何一条路径里；只有你把主设备换到另一台设备时，声纹经局域网直接移过去。个人词典不发给任何模型来源。</p>
+<p>录音在你删除之前一直保留；删除的方式见 App 的“设置”。删除录音、条目或整个资料库后，对应内容从这台设备上移除。</p>
+<p>Apple Watch 的录音在 iPhone 确认收到之前保留在手表上；确认后，原件保存在 iPhone 上。在原件进入 Mac 或你的 iCloud 副本之前，它仅存放于这台 iPhone；iPhone 的设备备份（iCloud 云备份或电脑备份）由 Apple 或你选择的备份方式加密和保管，Mindloom 不上传备份。</p>
+
+<h2>4. 内容可能离开设备的路径</h2>
+<p>下面每一条写明去哪里、发送什么、谁决定。内容离开设备，只经过这些路径。</p>
+
+<article class="exit">
+<h3>(a) 下载模型（Mac）<span class="tag">你点“下载”时</span></h3>
+<dl class="fields">
+<dt>去哪里</dt><dd>Hugging Face（huggingface.co）上固定版本的公开模型文件</dd>
+<dt>发送什么</dt><dd>下载请求，含你的 IP 地址和标准 HTTP 信息；不含你的内容</dd>
+<dt>谁决定</dt><dd>你点“下载”时</dd>
+</dl>
+</article>
+
+<article class="exit">
+<h3>(b) Apple 的系统服务<span class="tag">系统权限</span></h3>
+<dl class="fields">
+<dt>去哪里</dt><dd>Apple</dd>
+<dt>发送什么</dt><dd>iPhone 上的语音识别由系统在设备上进行，系统会下载语音识别资源；翻译使用系统的翻译框架；日历和提醒事项经系统的 EventKit 读写，提醒事项列表在 iCloud 上时由 Apple 同步。这些由 Apple 的政策约束。</dd>
+<dt>谁决定</dt><dd>你在系统里授予或撤销权限</dd>
+</dl>
+</article>
+
+<article class="exit">
+<h3>(c) 你自己的设备之间<span class="tag">默认关闭</span></h3>
+<dl class="fields">
+<dt>去哪里</dt><dd>你配对的 Mac 和 iPhone（Apple Watch 的录音经 iPhone）：在同一个局域网里直接传；也可以经你自己的 DGX Spark 中转，Spark 只保存密文。</dd>
+<dt>发送什么</dt><dd>你添加的文字、链接、图片和文件，转写文字，修改记录，整理出的内容，个人词典，以及录音原件。内容先在设备上用资料库密钥加密；图片先移除拍摄地点和设备信息。声纹不在其中。</dd>
+<dt>谁决定</dt><dd>你扫码配对，并在“设置”里开启；可以断开连接。</dd>
+</dl>
+</article>
+
+<article class="exit">
+<h3>(d) 你自己的模型服务<span class="tag">默认关闭</span></h3>
+<dl class="fields">
+<dt>去哪里</dt><dd>你自己的 DGX Spark，或你所在组织的模型网关，经你开启的、可以撤销的加密 SSH 连接；你在本机、局域网或你自己的私有网络里添加的模型服务也算你自己的。网关和它后面的模型服务不保存请求内容。</dd>
+<dt>发送什么</dt><dd>整理用的请求：资料的文字和事情的摘要。电话号码、证件号等先在设备上遮挡，收到回答后在设备上还原。录音、声纹和个人词典不发送。</dd>
+<dt>谁决定</dt><dd>你选择这个模型来源并开启；可以随时断开连接。没有开启时，不发送任何整理请求。</dd>
+</dl>
+</article>
+
+<article class="exit">
+<h3>(e) 云端模型来源<span class="tag">默认关闭</span></h3>
+<dl class="fields">
+<dt>去哪里</dt><dd>你自己选择的云端模型服务商（用你自己的密钥），或你所在组织的管理员放进签名目录的云端模型。</dd>
+<dt>发送什么</dt><dd>与 (d) 相同的整理请求：资料的文字和事情的摘要。号码已遮挡；人名、地点等其余内容按原样发送。当前不发送图片。录音、声纹和个人词典不发送。</dd>
+<dt>谁决定</dt><dd>你添加自己的密钥（或选择组织目录里的云端项），看过写明服务商、发送什么、对方如何保存的告知页后，点“使用”。这个授权 30 天后失效，需要再次确认。每条请求在设备上留有记录。服务商如何保存和使用收到的内容，适用它自己的政策；已经发出的内容收不回。</dd>
+</dl>
+</article>
+
+<article class="exit">
+<h3>(f) iCloud 同步<span class="tag">默认关闭</span></h3>
+<dl class="fields">
+<dt>去哪里</dt><dd>你自己的 iCloud 私有数据库</dd>
+<dt>发送什么</dt><dd>正文、修改记录、个人词典和录音，在设备上用资料库密钥加密后才放入 iCloud。资料库密钥保存在你的 iCloud 钥匙串和你的设备上，开发者没有这把密钥；因此不论是否开启“高级数据保护”，Apple 保管的都是密文。声纹不在其中。首次开启时需要你另存一份恢复密钥。</dd>
+<dt>谁决定</dt><dd>只有带 iCloud 功能的版本有这一项。你看过说明后在设置里开启；可以关闭。iCloud 里的副本在你自己的 iCloud 账户中，存储由 iCloud 设置管理。</dd>
+</dl>
+</article>
+
+<article class="exit">
+<h3>(g) 从网络补充信息（仅 Mac）<span class="tag">默认关闭</span></h3>
+<dl class="fields">
+<dt>去哪里</dt><dd>公开来源：arXiv、Crossref、Wikipedia、OpenStreetMap、ccfddl.com 的公开会议截止表、你要读的网页；你填入密钥的搜索服务（Brave、Tavily、Exa、Perplexity、百度千帆、博查、智谱）；组织成员的搜索可经组织网关转发到管理员配置的搜索服务。本机读不了的网页（要执行脚本才有内容），且网址是搜索服务或会议截止表列出的，经 r.jina.ai 读取。</dd>
+<dt>发送什么</dt><dd>经本机检查后的搜索词或网页地址；不含录音、转写、资料库内容和你认识的人的姓名；健康类事项不联网。会议截止表整份下载，请求里没有你关心哪个会议。经 r.jina.ai 读取时，对方收到该网页的地址（带 Do Not Track）和你的 IP 地址，不收到你的内容；你自己收进来的链接不经它。</dd>
+<dt>谁决定</dt><dd>你在“设置”里开启；每次请求都记录在“网络活动”里，记录不含内容。</dd>
+</dl>
+</article>
+
+<article class="exit">
+<h3>(h) 腾讯会议入口（仅 Mac）<span class="tag">默认关闭</span></h3>
+<dl class="fields">
+<dt>去哪里</dt><dd>腾讯（Tencent）的服务：api.meeting.qq.com、work.medialab.qq.com、meeting.tencent.com</dd>
+<dt>发送什么</dt><dd>你的腾讯会议登录凭据、会议和录制编号、查询的时间范围，以及请求头里的账户标识（openId）、随机生成的设备号、macOS 版本和命令名；不发送 Mindloom 资料库里的任何内容。读回的是你的账户有权查看的会议转写。</dd>
+<dt>谁决定</dt><dd>你在“设置”>“入口”里开启并登录；可以随时断开连接。</dd>
+</dl>
+</article>
+
+<article class="exit">
+<h3>(i) 其他 App 读取（外部 Agent，仅 Mac）<span class="tag">总开关默认关闭</span></h3>
+<dl class="fields">
+<dt>去哪里</dt><dd>你允许的 App，如 Claude Code、Claude Desktop、Codex、Cursor。连接只在这台 Mac 上，不开网络端口。</dd>
+<dt>发送什么</dt><dd>你在授权卡上勾选的事的文字（标题、进展、步骤、日期、人名，以及你要它看原文时的摘录）；不含录音、声纹和个人词典；手机号、证件号默认隐藏。</dd>
+<dt>谁决定</dt><dd>总开关默认关；每个 App 第一次读取时由你授权，可以随时停止。这些 App 的服务方如何处理读到的内容，适用它们自己的政策；已经读走的内容收不回。</dd>
+</dl>
+</article>
+
+<article class="exit">
+<h3>(j) 共享空间（Mac）<span class="tag">加入后逐条勾选</span></h3>
+<dl class="fields">
+<dt>去哪里</dt><dd>你加入的共享空间的其他成员的设备，经组织的网关或整理设备转发；转发方读不了内容。</dd>
+<dt>发送什么</dt><dd>你逐条勾选的条目，在你的设备上加密给其他成员的设备后发出。没有加入空间、没有勾选，就不发送任何内容。</dd>
+<dt>谁决定</dt><dd>你加入空间并勾选每一条；可以随时退出。</dd>
+</dl>
+</article>
+
+<article class="exit">
+<h3>(k) 检查更新（仅 Mac 直接下载版）<span class="tag">默认关闭</span></h3>
+<dl class="fields">
+<dt>去哪里</dt><dd>Mindloom 公布更新信息的网站上的一个小文件；没有设定该地址的版本不联网。</dd>
+<dt>发送什么</dt><dd>标准 HTTP 请求，含你的 IP 地址；不含你的内容。</dd>
+<dt>谁决定</dt><dd>你点“检查更新”，或开启自动检查。</dd>
+</dl>
+</article>
+
+<h2>5. 权限用在哪里</h2>
+<table>
+<tr><th>麦克风（Mac、iPhone、Apple Watch）</th><td>录制你开始的口述、会议和录音。iPhone 上语音开启期间保持一个麦克风会话，屏幕顶部显示橙色圆点，实时活动显示剩余时间并带“结束”按钮。</td></tr>
+<tr><th>设备控制和数据访问（辅助功能，Mac）</th><td>监听你设置的按键（含 fn）；把口述的文字粘贴到当前输入位置；读取当前输入框的文字，确认文字已写入；读取会议 App 窗口里的会议标题、参会者姓名和正在发言的人，用来标注逐字稿。读到的内容保存在本机资料库中，不发送到第 4 节以外的任何地方。</td></tr>
+<tr><th>录屏与系统录音（Mac）</th><td>你选择录制某个 App 或整台 Mac 的声音时，录制系统音频。</td></tr>
+<tr><th>日历、提醒事项（Mac）</th><td>读取你选择的日历的日程；你点“添加到提醒事项”时创建一条提醒。</td></tr>
+<tr><th>相机（iPhone）</th><td>扫描 Mac 上显示的二维码，完成配对。</td></tr>
+<tr><th>本地网络（Mac、iPhone）</th><td>连接你配对的设备（你的 Mac 或 iPhone，或你的 DGX Spark 及它前面的跳板机），传送你添加的内容。</td></tr>
+<tr><th>语音识别（iPhone）</th><td>在 iPhone 上把口述转写为文字。</td></tr>
+</table>
+
+<h2>6. iPhone 键盘</h2>
+<p>本版本不含 Mindloom 键盘，也不申请“允许完全访问”。</p>
+
+<h2>7. 保留与删除</h2>
+<p>内容保存在你的设备上，直到你删除。你可以在 App 内删除单条录音、条目，或清空资料库；也可以断开与 DGX Spark、腾讯会议、网络补充信息和其他 App 的连接，并删除对应的本机凭据。从网络补充信息发出的请求记录在“网络活动”里，保留 90 天，可以在 App 内清除。已经发送到第三方（第 4 节 (e)(g)(h)(i)）的内容，按对方的政策处理，Mindloom 无法从对方那里收回。</p>
+
+<h2>8. 儿童</h2>
+<p>Mindloom 不面向 13 岁以下儿童，不有意收集儿童的个人信息。</p>
+
+<h2>9. 你的权利</h2>
+<p>开发者不持有你的内容，因此没有可供查询、更正或删除的开发者端副本。你在自己的设备上随时可以查看、导出和删除内容。就本政策提出的问题，请联系 <a href="mailto:mindloom@agent.qq.com">mindloom@agent.qq.com</a>。</p>
+
+<h2>10. 政策变更</h2>
+<p>政策变更时更新本页，并在 App 内说明重大变更。</p>
+</section>
+
+<section id="en" lang="en">
+<h1>Mindloom Privacy Policy</h1>
+<p class="meta">Effective 18 October 2026. Developer: Ethan Huang. Contact: <a href="mailto:mindloom@agent.qq.com">mindloom@agent.qq.com</a></p>
+
+<div class="summary">
+<ul>
+<li>Recordings, transcripts, the items you add, voiceprints and your personal dictionary are stored on your own devices.</li>
+<li>Mindloom has no accounts, no ads, no third-party analytics, no tracking, and no crash or usage reporting.</li>
+<li>The developer runs no server that receives your recordings, transcripts or items, so the developer does not receive them.</li>
+<li>Section 4 lists every path by which content can leave a device. Apart from the model download and Apple's system services, each is off by default, is turned on by you, and can be turned off at any time.</li>
+</ul>
+</div>
+
+<h2>1. Scope</h2>
+<p>This policy covers the Mindloom apps on Mac, iPhone and Apple Watch, including the share extensions, the Live Activity, the Apple Watch complication, and the Mac Services menu item.</p>
+
+<h2>2. What the developer receives</h2>
+<p>The developer does not receive your recordings, transcripts or items. Section 4 lists every path by which content can leave your device; apart from (a) and (b) (the model download and Apple's system services), each is off by default, is turned on by you, and can be turned off at any time.</p>
+
+<h2>3. What stays on your device</h2>
+<p>The following is stored on your Mac or iPhone and managed by you:</p>
+<ul>
+<li>Recordings (dictation, meetings, system audio, imported audio and video, Apple Watch and iPhone recordings) and their transcripts. The iPhone and Apple Watch have no meetings, system audio or import.</li>
+<li>Text, links, screenshots and files you add, with their source (app name, time, web address).</li>
+<li>Voiceprints (voice samples) and your personal dictionary.</li>
+<li>The people-and-matters organization built from them, and the search index.</li>
+</ul>
+<p>Voiceprints are kept on the primary device (the Mac, or the iPhone when you use only an iPhone) and are in none of the paths in Section 4; they move only when you move the primary device to another device, directly over the local network. The personal dictionary is not sent to any model source.</p>
+<p>Recordings are kept until you delete them; the app's Settings shows how. When you delete a recording, an item or the whole library, the matching content is removed from this device.</p>
+<p>An Apple Watch recording stays on the watch until the paired iPhone confirms it has it; the iPhone then keeps the original. Until the original reaches your Mac or your iCloud copy, it exists only on that iPhone. The iPhone's device backup (iCloud Backup or a computer backup) is encrypted and held by Apple or by your backup choice, and Mindloom does not upload backups.</p>
+
+<h2>4. Paths by which content can leave a device</h2>
+<p>Each path below says where it goes, what is sent, and who decides. Content leaves a device only by these paths.</p>
+
+<article class="exit">
+<h3>(a) Model download (Mac)<span class="tag">When you tap Download</span></h3>
+<dl class="fields">
+<dt>Where to</dt><dd>Hugging Face (huggingface.co), pinned public model files</dd>
+<dt>What is sent</dt><dd>The download request, including your IP address and standard HTTP data; none of your content</dd>
+<dt>Who decides</dt><dd>You, when you tap Download</dd>
+</dl>
+</article>
+
+<article class="exit">
+<h3>(b) Apple's system services<span class="tag">System permissions</span></h3>
+<dl class="fields">
+<dt>Where to</dt><dd>Apple</dd>
+<dt>What is sent</dt><dd>Speech recognition on iPhone runs on the device through the system, which downloads its speech assets; translation uses the system Translation framework; Calendar and Reminders use EventKit, and Apple syncs a Reminders list that is in iCloud. These are governed by Apple's policies.</dd>
+<dt>Who decides</dt><dd>You, by granting or revoking permissions in the system</dd>
+</dl>
+</article>
+
+<article class="exit">
+<h3>(c) Between your own devices<span class="tag">Off by default</span></h3>
+<dl class="fields">
+<dt>Where to</dt><dd>The Mac and iPhone you paired (an Apple Watch recording goes through the iPhone): directly over the same local network, or through your own DGX Spark, which stores only ciphertext.</dd>
+<dt>What is sent</dt><dd>Text, links, images and files you add, transcripts, edit history, organized results, the personal dictionary, and original recordings. Content is first encrypted on the device with the library key; images first lose their location and device information. Voiceprints are not included.</dd>
+<dt>Who decides</dt><dd>You scan the code to pair and turn it on in Settings; you can disconnect.</dd>
+</dl>
+</article>
+
+<article class="exit">
+<h3>(d) Your own model service<span class="tag">Off by default</span></h3>
+<dl class="fields">
+<dt>Where to</dt><dd>Your own DGX Spark, or your organization's model gateway, over an encrypted SSH link that you turn on and can revoke; a model service you add on this device, your local network or your own private network counts as your own. The gateway and the model services behind it do not store request content.</dd>
+<dt>What is sent</dt><dd>Organizing requests: the text of items and summaries of matters. Phone and ID numbers are masked on the device first and restored on the device after the answer returns. Recordings, voiceprints and the dictionary are not sent.</dd>
+<dt>Who decides</dt><dd>You choose this model source and turn it on, and can disconnect at any time. While it is off, no organizing request is sent.</dd>
+</dl>
+</article>
+
+<article class="exit">
+<h3>(e) Cloud model source<span class="tag">Off by default</span></h3>
+<dl class="fields">
+<dt>Where to</dt><dd>A cloud model provider you choose (with your own key), or a cloud model that your organization's admin put in the signed catalog.</dd>
+<dt>What is sent</dt><dd>The same organizing requests as (d): the text of items and summaries of matters. Numbers are masked; names, places and the rest are sent as they are. Images are not sent at present. Recordings, voiceprints and the dictionary are not sent.</dd>
+<dt>Who decides</dt><dd>You add your own key (or pick a cloud entry in your organization's catalog), read a notice that names the provider, what is sent and how the provider keeps it, and tap Use. That consent expires after 30 days and must be given again. Each request is recorded on the device. What the provider does with the content is governed by its own policy, and content already sent cannot be recalled.</dd>
+</dl>
+</article>
+
+<article class="exit">
+<h3>(f) iCloud sync<span class="tag">Off by default</span></h3>
+<dl class="fields">
+<dt>Where to</dt><dd>Your own iCloud private database</dd>
+<dt>What is sent</dt><dd>Text, edit history, the personal dictionary and recordings, encrypted on the device with the library key before they go into iCloud. The library key is kept in your iCloud Keychain and on your devices, and the developer does not have it; so whether or not Advanced Data Protection is on, what Apple holds is ciphertext. Voiceprints are not included. The first time you turn it on, you are asked to save a recovery key.</dd>
+<dt>Who decides</dt><dd>Only versions that include iCloud sync have this path. You turn it on in Settings after reading the notice, and can turn it off. The copy is in your own iCloud account, and iCloud settings manage its storage.</dd>
+</dl>
+</article>
+
+<article class="exit">
+<h3>(g) Web lookup (Mac only)<span class="tag">Off by default</span></h3>
+<dl class="fields">
+<dt>Where to</dt><dd>Public sources: arXiv, Crossref, Wikipedia, OpenStreetMap, the public conference-deadline table at ccfddl.com, the page being read; search services for which you paste a key (Brave, Tavily, Exa, Perplexity, Baidu Qianfan, Bocha, Zhipu); for organization members, a search may be relayed by the organization's gateway to the search services the admin configured. A page the Mac cannot read itself (it needs a script), when a search service or the deadline table listed its address, is read through r.jina.ai.</dd>
+<dt>What is sent</dt><dd>The search terms or page address that pass an on-device check; no recordings, transcripts, library content or names of people you know; health matters are not sent. The deadline table is downloaded whole, so the request does not say which conference you care about. Through r.jina.ai, that service receives the page's address (with Do Not Track) and your IP address, and none of your content; links you collected yourself do not go through it.</dd>
+<dt>Who decides</dt><dd>You turn it on in Settings. Each request is recorded in Network Activity, without its content.</dd>
+</dl>
+</article>
+
+<article class="exit">
+<h3>(h) Tencent Meeting entry (Mac only)<span class="tag">Off by default</span></h3>
+<dl class="fields">
+<dt>Where to</dt><dd>Tencent services: api.meeting.qq.com, work.medialab.qq.com, meeting.tencent.com</dd>
+<dt>What is sent</dt><dd>Your Tencent Meeting login credentials, meeting and recording numbers and time windows, and in the request headers your account identifier (openId), a randomly generated device number, the macOS version and the command name; nothing from the Mindloom library. It reads back meeting transcripts your account may view.</dd>
+<dt>Who decides</dt><dd>You turn it on and sign in under Settings > Entries, and can disconnect at any time.</dd>
+</dl>
+</article>
+
+<article class="exit">
+<h3>(i) Other apps reading Mindloom (external agents, Mac only)<span class="tag">Master switch off by default</span></h3>
+<dl class="fields">
+<dt>Where to</dt><dd>Apps you allow, such as Claude Code, Claude Desktop, Codex, Cursor. The connection exists on this Mac only and opens no network port.</dd>
+<dt>What is sent</dt><dd>The text of the matters you tick on the consent card (titles, progress, steps, dates, names, and excerpts when you ask for the source text); no recordings, voiceprints or dictionary; phone and ID numbers are masked by default.</dd>
+<dt>Who decides</dt><dd>The master switch is off by default; you authorize each app when it first reads, and can stop at any time. What that app's provider does with the text is governed by its own policy, and what it has already read cannot be taken back.</dd>
+</dl>
+</article>
+
+<article class="exit">
+<h3>(j) Shared spaces (Mac)<span class="tag">Join, then tick item by item</span></h3>
+<dl class="fields">
+<dt>Where to</dt><dd>The devices of the other members of a space you joined, relayed by the organization's gateway or organizing device, which cannot read the content.</dd>
+<dt>What is sent</dt><dd>The items you tick one by one, encrypted on your device to the other members' devices. Nothing is sent unless you joined a space and ticked the item.</dd>
+<dt>Who decides</dt><dd>You join a space and tick each item; you can leave at any time.</dd>
+</dl>
+</article>
+
+<article class="exit">
+<h3>(k) Update check (Mac direct-download edition only)<span class="tag">Off by default</span></h3>
+<dl class="fields">
+<dt>Where to</dt><dd>A small file on the website where Mindloom announces updates; a version with no address set contacts nothing.</dd>
+<dt>What is sent</dt><dd>A standard HTTP request, including your IP address; none of your content.</dd>
+<dt>Who decides</dt><dd>You tap Check for Updates or turn on automatic checks.</dd>
+</dl>
+</article>
+
+<h2>5. What each permission is used for</h2>
+<table>
+<tr><th>Microphone (Mac, iPhone, Apple Watch)</th><td>Record the dictation, meetings and recordings you start. On iPhone one microphone session stays open while voice is on, with the orange dot at the top of the screen and a Live Activity that shows the time left and an End button.</td></tr>
+<tr><th>Device Control and Data Access (Accessibility, Mac)</th><td>Listen for the keys you set (including fn); paste dictated text at the cursor; read the focused field's text to confirm the text arrived; read the meeting title, participant names and active speaker from a meeting app's window to label transcripts. What is read is stored in the library on the Mac and is sent nowhere beyond Section 4.</td></tr>
+<tr><th>Screen &amp; System Audio Recording (Mac)</th><td>Record system audio when you choose an app or the whole Mac.</td></tr>
+<tr><th>Calendars, Reminders (Mac)</th><td>Read events from calendars you choose; create a reminder when you tap Add to Reminders.</td></tr>
+<tr><th>Camera (iPhone)</th><td>Scan the QR code shown on the Mac to pair.</td></tr>
+<tr><th>Local Network (Mac, iPhone)</th><td>Connect to the devices you paired (your Mac or iPhone, or your DGX Spark and the jump host in front of it) to transfer what you add.</td></tr>
+<tr><th>Speech Recognition (iPhone)</th><td>Transcribe dictation on the iPhone.</td></tr>
+</table>
+
+<h2>6. The iPhone keyboard</h2>
+<p>This version has no Mindloom keyboard and does not ask for "Allow Full Access".</p>
+
+<h2>7. Retention and deletion</h2>
+<p>Content stays on your device until you delete it. In the app you can delete single recordings and items or clear the library, and disconnect the DGX Spark, Tencent Meeting, web lookup and other apps and remove the matching local credentials. The record of web lookup requests, in Network Activity, is kept for 90 days and can be cleared in the app. Content already sent to third parties (Section 4 (e)(g)(h)(i)) is handled under their policies, and Mindloom cannot recall it.</p>
+
+<h2>8. Children</h2>
+<p>Mindloom is not directed to children under 13 and does not knowingly collect their personal information.</p>
+
+<h2>9. Your rights</h2>
+<p>The developer holds no copy of your content, so there is nothing at the developer's end to access, correct or delete. On your own device you can view, export and delete your content at any time. For questions about this policy, contact <a href="mailto:mindloom@agent.qq.com">mindloom@agent.qq.com</a>.</p>
+
+<h2>10. Changes</h2>
+<p>Changes are posted on this page, and material changes are explained in the app.</p>
+</section>
+</main>
+<footer>
+<p>© 2026 Ethan Huang</p>
+</footer>
+</body>
+</html>
